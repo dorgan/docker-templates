@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <TemplateURL>https://raw.githubusercontent.com/dorgan/docker-templates/master/templates/video-transcoding.xmkl.xml</TemplateURL>
+  <Name>video-transcoding</Name>
+  <Date>2017-01-02</Date>
+<Changes>[center][img width='300px' src='https://avatars0.githubusercontent.com/u/115488?s=460&v=4'][/center]
+
+  [center][font size=4]Changelog[/font][/center]
+  [font size=4]07-11-2016[/font]
+  - Initial release.
+  </Changes>
+  <Repository>ntodd/video-transcoding</Repository>
+  <Registry>https://hub.docker.com/r/ntodd/video-transcoding/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Project>https://github.com/donmelton/video_transcoding</Project>
+  <Support>\</Support>
+  <Overview>This container setups a bash shell ready to use the video transcoding gem provided by Don Melton&#xD;
+  &#xD;
+  Before running this container, make tusre you properly setup the /media path&#xD;
+  <Description>Docker container for using video transcoding gem provide by Don Melton</Description>
+  <Category>Tools: Network:Media:Stable</Category>
+  <WebUI></WebUI>
+  <Icon>https://avatars0.githubusercontent.com/u/115488?s=460&v=4</Icon>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+    </Variable>
+  </Environment>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
+  <Config Name="Path Containing Media" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="true" Mask="false"></Config>
+<BaseImage>ntodd/video-transcoding</BaseImage>
+</Container>
