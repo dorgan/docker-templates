@@ -3,12 +3,7 @@
   <TemplateURL>https://raw.githubusercontent.com/dorgan/docker-templates/master/templates/video-transcoding.xml</TemplateURL>
   <Name>video-transcoding</Name>
   <Date>2017-01-02</Date>
-<Changes>[center][img width='300px' src='https://avatars0.githubusercontent.com/u/115488?s=460&v=4'][/center]
-
-  [center][font size=4]Changelog[/font][/center]
-  [font size=4]07-11-2016[/font]
-  - Initial release.
-  </Changes>
+  <Changes></Changes>
   <Repository>ntodd/video-transcoding</Repository>
   <Registry>https://hub.docker.com/r/ntodd/video-transcoding/</Registry>
   <Network>bridge</Network>
@@ -21,7 +16,7 @@
   <Description>Docker container for using video transcoding gem provide by Don Melton</Description>
   <Category>Tools: Network:Media:Stable</Category>
   <WebUI></WebUI>
-  <Icon>https://avatars0.githubusercontent.com/u/115488?s=460&v=4</Icon>
+  <Icon>https://avatars0.githubusercontent.com/u/115488?s=460&amp;v=4</Icon>
   <Networking>
     <Mode>bridge</Mode>
   </Networking>
