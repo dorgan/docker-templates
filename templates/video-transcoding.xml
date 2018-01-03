@@ -13,6 +13,7 @@
   <Overview>This container setups a bash shell ready to use the video transcoding gem provided by Don Melton&#xD;
   &#xD;
   Before running this container, make tusre you properly setup the /media path&#xD;
+  </Overview>
   <Description>Docker container for using video transcoding gem provide by Don Melton</Description>
   <Category>Tools: Network:Media:Stable</Category>
   <WebUI></WebUI>
