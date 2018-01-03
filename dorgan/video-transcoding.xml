@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>video-transcoding</Name>
-  <Repository>ntodd/video-transcoding</Repository>
-  <Registry>https://hub.docker.com/r/ntodd/video-transcoding/</Registry>
+  <Repository>dorgan/video-transcoding</Repository>
+  <Registry>https://hub.docker.com/r/dorgan/video-transcoding/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support/>
@@ -46,4 +46,5 @@
   <Config Name="Path Containing Media" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <BaseImage>dorgan/video-transcoding</BaseImage>
 </Container>
