@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>video-transcoding</Name>
+  <Name>video-transcoder</Name>
   <Repository>dorgan/video-transcoding</Repository>
   <Registry>https://hub.docker.com/r/dorgan/video-transcoding/</Registry>
   <Network>bridge</Network>
@@ -15,10 +15,10 @@
   <TemplateURL>https://raw.githubusercontent.com/dorgan/docker-templates/master/templates/video-transcoding.xml</TemplateURL>
   <Icon>https://pbs.twimg.com/profile_images/1136824066/donmelton.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1514939206</DateInstalled>
+  <DateInstalled>1515178063</DateInstalled>
   <Description>This container setups a bash shell ready to use the video transcoding gem provided by Don Melton&#xD;
   &#xD;
-  Before running this container, make tusre you properly setup the /data and /encoded paths&#xD;
+  Before running this container, make tusre you properly setup the /media path&#xD;
   </Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -26,12 +26,12 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir/>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir/>
       <ContainerDir>/encoded</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -48,9 +48,8 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="Path Containing Media" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Path to Encoded Media" Target="/encoded" Default="" Mode="rw" Description="Container Path: /encoded" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Path Containing Media" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Path to Encoded Media" Target="/encoded" Default="" Mode="rw" Description="Container Path: /encoded" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
-  <BaseImage>dorgan/video-transcoding:latest</BaseImage>
 </Container>
