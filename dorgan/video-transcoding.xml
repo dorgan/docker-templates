@@ -47,9 +47,15 @@
       <Name>PGID</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>PRESET</value>
+      <Mode/>
+    </Variable>
   </Environment>
   <Config Name="Path Containing Media" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Path to Encoded Media" Target="/encoded" Default="" Mode="rw" Description="Container Path: /encoded" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="PRESET" TARGET="PRESET" Default="veryquick" Mode="" Description="Preset for transcoding" Type="Variable" Display="advanced-hide" Required="true" Mask="false">veryquick</Config>
 </Container>
