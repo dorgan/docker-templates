@@ -48,8 +48,8 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value></Value>
-      <Name>PRESET</value>
+      <Value>veryquick</Value>
+      <Name>PRESET</Name>
       <Mode/>
     </Variable>
   </Environment>
